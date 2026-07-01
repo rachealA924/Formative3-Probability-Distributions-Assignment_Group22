@@ -71,14 +71,6 @@ Given a test height, the model outputs:
 
 ---
 
-## Part 2 — Bayesian Probability
-> To be completed by Thomas
-
----
-
-## Part 3 — Gradient Descent (Manual Calculations)
-Here's a professional **README section for Part 2 (Bayesian Probability Analysis)** that matches what you've implemented.
-
 # Part 2: Bayesian Probability Analysis Using IMDb Movie Reviews
 
 ## Objective
@@ -221,6 +213,10 @@ The chart allows for easy comparison of how strongly each keyword is associated 
 Using Bayes' Theorem, we successfully analyzed sentiment-indicating keywords within the IMDb Movie Reviews dataset. The results demonstrate how prior knowledge and observed evidence can be combined to estimate the probability that a review is positive when specific keywords are present. This exercise provided practical experience with conditional probability, Bayesian inference, and Python-based data analysis.
 
 ---
+
+## Part 3 — Gradient Descent (Manual Calculations)
+Here's a professional **README section for Part 2 (Bayesian Probability Analysis)** that matches what you've implemented.
+
 
 ## Part 4 — Gradient Descent in Code
 > To be completed by Arnold
