@@ -77,7 +77,148 @@ Given a test height, the model outputs:
 ---
 
 ## Part 3 — Gradient Descent (Manual Calculations)
-> To be completed by the group
+Here's a professional **README section for Part 2 (Bayesian Probability Analysis)** that matches what you've implemented.
+
+# Part 2: Bayesian Probability Analysis Using IMDb Movie Reviews
+
+## Objective
+
+The objective of this section is to apply Bayes' Theorem to a real-world sentiment analysis problem using the IMDb Movie Reviews dataset. We selected sentiment-related keywords and calculated the probability that a review is positive given the presence of a particular keyword.
+
+---
+
+## Dataset
+
+We used the IMDb Movie Reviews Dataset containing movie reviews labeled as either:
+
+* Positive
+* Negative
+
+The dataset consists of review text and its associated sentiment label.
+
+---
+
+## Selected Keywords
+
+The following keywords were selected as indicators of positive sentiment:
+
+* excellent
+* great
+* amazing
+* wonderful
+
+---
+
+## Bayesian Probability
+
+For this project, we calculated:
+
+[
+P(Positive|Keyword)
+]
+
+which represents the probability that a review is positive given that a specific keyword appears in the review.
+
+Using Bayes' Theorem:
+
+[
+P(Positive|Keyword)=
+\frac{P(Keyword|Positive)\times P(Positive)}
+{P(Keyword)}
+]
+
+Where:
+
+* **Prior** (P(Positive)): Probability that a review is positive.
+* **Likelihood** (P(Keyword|Positive)): Probability of observing the keyword in a positive review.
+* **Marginal** (P(Keyword)): Probability of observing the keyword in any review.
+* **Posterior** (P(Positive|Keyword)): Updated probability that a review is positive after observing the keyword.
+
+---
+
+## Implementation
+
+The solution was implemented in Python without using any machine learning libraries.
+
+The following functions were created:
+
+### `compute_prior()`
+
+Calculates:
+
+[
+P(Positive)
+]
+
+by determining the proportion of positive reviews in the dataset.
+
+### `compute_likelihood()`
+
+Calculates:
+
+[
+P(Keyword|Positive)
+]
+
+by measuring how often a keyword appears within positive reviews.
+
+### `compute_marginal()`
+
+Calculates:
+
+[
+P(Keyword)
+]
+
+by measuring how often a keyword appears in the entire dataset.
+
+### `compute_posterior()`
+
+Applies Bayes' Theorem to calculate:
+
+[
+P(Positive|Keyword)
+]
+
+### `classify_keyword()`
+
+Displays all probability values for a selected keyword and returns the results for tabular analysis.
+
+---
+
+## Results
+
+| Keyword   | P(Positive) | P(Keyword|Positive) | P(Keyword) | P(Positive|Keyword) |
+| --------- | ----------- | ------------------- | ---------- | ------------------- |
+| excellent | 0.50        | 0.11744             | 0.07250    | 0.80993             |
+| great     | 0.50        | 0.37124             | 0.27614    | 0.67220             |
+| amazing   | 0.50        | 0.07400             | 0.04958    | 0.74627             |
+| wonderful | 0.50        | 0.10660             | 0.06498    | 0.82025             |
+
+---
+
+## Interpretation
+
+The posterior probabilities indicate how strongly each keyword predicts positive sentiment.
+
+* **wonderful** was the strongest positive indicator with a probability of approximately **82.03%**.
+* **excellent** closely followed with **80.99%**.
+* **amazing** showed a positive sentiment probability of **74.63%**.
+* **great** had the lowest posterior probability among the selected keywords at **67.22%**, suggesting that it appears more broadly across different review types.
+
+---
+
+## Visualization
+
+A bar chart was generated to visualize the posterior probabilities for each keyword.
+
+The chart allows for easy comparison of how strongly each keyword is associated with positive sentiment.
+
+---
+
+## Conclusion
+
+Using Bayes' Theorem, we successfully analyzed sentiment-indicating keywords within the IMDb Movie Reviews dataset. The results demonstrate how prior knowledge and observed evidence can be combined to estimate the probability that a review is positive when specific keywords are present. This exercise provided practical experience with conditional probability, Bayesian inference, and Python-based data analysis.
 
 ---
 
