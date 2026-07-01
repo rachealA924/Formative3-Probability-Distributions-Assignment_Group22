@@ -219,7 +219,33 @@ Here's a professional **README section for Part 2 (Bayesian Probability Analysis
 
 
 ## Part 4 — Gradient Descent in Code
-> To be completed by Arnold
+> In this section I turned the Gradient Descent calculations from Part 3 into a Python code while following the assignment requirements. The main goal was to get the final values of the model parameters and to show how Gradient Descent works.
+
+I started by defining the dataset, the initial parameter values and the learning rate exactly as given in the assignment.
+
+To keep the code organized and reusable I broke the program into functions that make predictions compute the Mean Squared Error and approximate the gradients using SciPy.
+
+This structure follows the Don't Repeat Yourself principle and makes each step of the optimization process to understand.
+
+I did not put the optimization inside one function.
+
+Instead I implemented the Gradient Descent algorithm step by step so that I could see every update.
+
+In each step the program calculates the predictions checks the loss estimates the gradients of the cost function for both the weights and the bias and updates these parameters using the Gradient Descent update rule.
+
+Printing these results helps to check that the parameters are moving in a direction that reduces the prediction error.
+
+To understand the learning process better I noted down the values of the parameters and the loss, after each step.
+
+I then used Matplotlib to create one graph that shows how the model parameters change over time and another that shows how the Mean Squared Error decreases during training.
+
+These graphs clearly show that the Gradient Descent algorithm is improving the model by reducing the prediction error.
+
+Overall this code shows the complete Gradient Descent process from setting up the model parameters to optimizing them through repeated updates while keeping the Python code readable, modular and well-documented that meets the assignment requirements.
+
+The Gradient Descent algorithm is working as expected. The model parameters are updated correctly.
+
+The Mean Squared Error is also decreasing as expected.
 
 ---
 
