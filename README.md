@@ -272,4 +272,4 @@ The Mean Squared Error is also decreasing as expected.
 | Arnold Mugabo | Part 3 & 4 — Gradient Descent |
 
 ## Team Tasksheet 
-
+Found in our repository.
