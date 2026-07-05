@@ -215,7 +215,7 @@ Using Bayes' Theorem, we successfully analyzed sentiment-indicating keywords wit
 ---
 
 ## Part 3 — Gradient Descent (Manual Calculations)
-Here's a professional **README section for Part 2 (Bayesian Probability Analysis)** that matches what you've implemented.
+This part is fund from our Github repo
 
 
 ## Part 4 — Gradient Descent in Code
