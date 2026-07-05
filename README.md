@@ -267,6 +267,6 @@ The Mean Squared Error is also decreasing as expected.
 | Name | Contribution |
 |------|-------------|
 | Racheal Resty Akello | Part 1 — EM Algorithm implementation, visualizations |
-| [Teammate 2] | Part 2 — Bayesian Probability |
-| [Teammate 3] | Part 3 & 4 — Gradient Descent |
-| [Teammate 4] | Part 3 & 4 — Gradient Descent |
+| Thomas Odongo | Part 2 — Bayesian Probability |
+| Whole Team | Part 3 — Gradient Descent |
+| Arnold Mugabo | Part 3 & 4 — Gradient Descent |
